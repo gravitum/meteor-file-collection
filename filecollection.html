@@ -1,0 +1,10 @@
+<template name="UploadFileButton">
+	<div style="display:none;">
+	{{#if isMultiple}}
+		<input class="uploadInput" type="file" multiple="true" accept="{{accept}}"/>
+	{{else}}
+		<input class="uploadInput" type="file" accept="{{accept}}"/>
+	{{/if}}
+	</div>
+	<a class="btn {{$or class 'btn-primary'}}">{{title}}</a>
+</template>
